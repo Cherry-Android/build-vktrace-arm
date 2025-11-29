@@ -4,7 +4,7 @@ export WORKSPACE=`pwd`
 
 cd $WORKSPACE
 
-## Download android-studio tool
+# Download android-studio tool
 wget https://dl.google.com/dl/android/studio/ide-zips/2025.2.1.8/android-studio-2025.2.1.8-linux.tar.gz
 tar -xvzf android-studio-2025.2.1.8-linux.tar.gz
 
@@ -15,7 +15,7 @@ tar -xvzf android-studio-2025.2.1.8-linux.tar.gz
 # Install Java JDK 17
 sudo apt install openjdk-17-jdk
 
-## Install SDK
+# Install SDK
 pushd ${WORKSPACE}/cmdline-tools/bin > /dev/null
 ./sdkmanager --sdk_root=${WORKSPACE}/android-studio "platform-tools" "platforms;android-29" \
 				"build-tools;30.0.3" "cmake;3.10.2.4988404"
